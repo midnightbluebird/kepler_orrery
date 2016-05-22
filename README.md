@@ -22,4 +22,4 @@ The movie can be recreated with the default settings by running
 
 `python orrery.py`
 
-`./makeorrery_movie.sh movie/ orrery_movie.mp4 30`
+`ffmpeg -i fig%03d.png -c:v libx264 -r 30 -pix_fmt yuv420p out.mp4 `
